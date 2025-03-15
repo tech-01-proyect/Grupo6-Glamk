@@ -1,38 +1,34 @@
 <!doctype html>
-
-  <head>
-   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-
-
-<style>
-body {
-        background-color: #a559f5; 
-        margin: 0;
-        font-family: Arial, sans-serif;
-}
-
-
- 
- h1 {
-      text-align: center;
-      color:#bd9be4;
-     font-family: 'Poppins', sans-serif;
-      background-color:#31194c;
-      padding: 30px;
-      flex-grow: 1; /* Hace que el h1 ocupe el máximo espacio posible */
-      text-align: center;
-
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LITERATURA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #a559f5; 
+      margin: 0;
+      font-family: Arial, sans-serif;
     }
 
+    h1 {
+      text-align: center;
+      color: #bd9be4;
+      font-family: 'Poppins', sans-serif;
+      background-color: #31194c;
+      padding: 30px;
+      text-align: center;
+    }
 
- a {
+    a {
       display: flex;
       justify-content: center;
       align-items: center;
       font-family: Arial, Helvetica, sans-serif;
-      font-weight: 700px;
-      font-size:30px;
-      background-color:#d0e3dd;
+      font-weight: 700; /* Corrected from 700px to 700 */
+      font-size: 30px;
+      background-color: #d0e3dd;
       padding: 15px;
       color: black;
       text-decoration: none;
@@ -41,11 +37,9 @@ body {
       height: 30%; 
     }
 
-  
     a:hover {
       background-color: rgb(15, 140, 70);
     }
-
 
     article {
       display: grid;
@@ -55,86 +49,100 @@ body {
       height: 50%;
     }
 
-    
-     a {
+    a {
       width: 100%; 
       height: 50px; 
     }
 
     div {
-        background-color: white;
-        padding: 20px; 
-        margin: 20px; 
-        border-radius: 4px;
-   }
-   
-   h2 {
-        color: #31194c;
-        text-align: center;
-      }
+      background-color: white;
+      padding: 20px; 
+      margin: 20px; 
+      border-radius: 4px;
+    }
 
-   .image-ad {
-          position: relative;
-          display: inline-block;
-          cursor: pointer;
-          border-radius: 8px;
-          transition: transform 0.3s ease, box-shadow 0.3s ease;
-      }
+    h2 {
+      color: #31194c;
+      text-align: center;
+    }
 
-      .image-ad img {
-          width: 100%;
-          border-radius: 8px;
-      }
+    .image-ad {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 
-      .image-ad:hover img {
-          transform: scale(1.05);
-          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-      }
+    .image-ad img {
+      width: 100%;
+      border-radius: 8px;
+    }
 
-      .image-ad .caption {
-          position: absolute;
-          top: 10px;
-          left: 10px;
-          background-color: rgba(0, 0, 0, 0.5);
-          color: white;
-          padding: 5px;
-          font-size: 18px;
-          border-radius: 5px;
-      }
-    
+    .image-ad:hover img {
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .image-ad .caption {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 5px;
+      font-size: 18px;
+      border-radius: 5px;
+    }
+
+    /* Fixed image container */
+    .fixed-image-container {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 180px;
+      height: 110px;
+      background: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .fixed-image-container img {
+      width: 100%;
+      height: auto;
+    }
+
   </style>
+</head>
+<body>
+  <h1>LITERATURA</h1>
+  <div>
+    <img src="../multimedia/Cuadrolite.JPG" alt="Cuadro" width="800" height="800">
+  </div>
 
-   
-  </head>
-  <body>
-    <h1>LITERATURA</h1>
-<div>
-<center><img src="../multimedia/Cuadrolite.JPG" alt="Cuadro" width="800" height="800">
-</div>
-<div class="image-ad">
-       <a href="https://www.youtube.com/" target="_blank">
-          <center> <img src="../multimedia/Publicidad1.jpg" alt="Publicidad Cuadro" width="500" height="300">
-           <div class="caption">¡Haz clic aquí para más información!</div>
-       </a>
-   </div>
-
-   <div class="image-ad">
-       <a href="https://www.youtube.com/" target="_blank">
-          <center> <img src="../multimedia/Publicidad2.jpg" alt="Publicidad Cuadro" width="500" height="300">
-           <div class="caption">Descubre nuestras ofertas</div>
-       </a>
-   </div>
-
-<div style="position: fixed; bottom: 20px; right:20px; width:180px; height:110px; background:white; padding: 10px; text-align: center;">
-    <a href="link por si se quiere que al apachar la imagen te envié a una pagina" target="_blank">  
-        <img src="../multimedia/vallalite2.jfif" alt="Imagen" style="width:200%;">
+  <div class="image-ad">
+    <a href="https://www.youtube.com/" target="_blank">
+      <img src="../multimedia/Publicidad1.jpg" alt="Publicidad Cuadro" width="500" height="300">
+      <div class="caption">¡Haz clic aquí para más información!</div>
     </a>
-</div>
+  </div>
 
+  <div class="image-ad">
+    <a href="https://www.youtube.com/" target="_blank">
+      <img src="../multimedia/Publicidad2.jpg" alt="Publicidad Cuadro" width="500" height="300">
+      <div class="caption">Descubre nuestras ofertas</div>
+    </a>
+  </div>
 
+  <div class="fixed-image-container">
+    <a href="link por si se quiere que al apachar la imagen te envié a una pagina" target="_blank">  
+      <img src="../multimedia/vallalite2.jfif" alt="Imagen">
+    </a>
+  </div>
 
-<article>
-<a href="../index.html">Regresar al inicio</a>
-</article>
-  </body>
+  <article>
+    <a href="../index.html">Regresar al inicio</a>
+  </article>
+</body>
 </html>
+
