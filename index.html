@@ -1,0 +1,165 @@
+<!doctype html>
+  <head>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+
+<style>
+body {
+        background-color:#8863ae; 
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+       
+        .fondo {
+            position: relative;
+            width: 100%;
+            height: 500px; 
+            margin-top: 20px;
+        }
+
+
+  .bg-image {
+   opacity: 0.7;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   position: absolute; 
+   top: 0;
+   left: 0; 
+   z-index: 0;
+        
+}
+
+ article {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 37px;
+            padding: 20px;
+            justify-items: center;
+            height: 100%;
+            position: absolute; /* Posiciona los botones sobre la imagen */
+            top: 0; /* Los botones comienzan en la parte superior del contenedor */
+            left: 0;
+            right: 0;
+            bottom: 0; /* Los botones cubren todo el área de la imagen */
+            z-index: 1; /* Los botones están encima de la imagen */
+        }
+
+     a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
+      background-color:#51455f;
+      border-radius:40px;
+      padding: 13px;
+      color: #bd9be4;
+      text-decoration: none;
+      text-align: center;
+      transition: background-color 0.3s ease;
+      height: 70%;
+      margin: 30px 0; 
+        width: 85%; 
+        box-sizing: border-box; 
+        font-size:30px;
+    }
+
+  
+   article a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+            background-color: #51455f;
+            border-radius: 40px;
+            padding: 13px;
+            color: #bd9be4;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s ease;
+            width: 75%;  /* El ancho del botón será el 75% del contenedor */
+            height: 80px; /* Altura de cada botón */
+            box-sizing: border-box;
+            font-size: 30px;
+        }
+
+    
+
+        a:hover {
+            background-color: rgb(15, 140, 70);
+        }
+
+
+
+
+
+header {
+       background-color:white;
+        color: black;
+        padding: 5px;
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+}
+
+ h1{
+      text-align: center;
+      color:#bd9be4;
+      font-family: 'Poppins', sans-serif;
+      font-size: 70px;
+      background-color:#31194c;
+      padding:20px;
+      flex-grow: 1; 
+      text-align: center;
+      margin-right:20px; 
+    }
+
+  p {
+      text-align:right;
+      font-family: Arial, sans-serif;
+      color:#62b0e3;
+      white-space: pre; 
+     }
+
+
+    img {
+      width:250px; 
+      height: auto;
+      border-radius:5px;    
+ }
+ 
+ 
+  </style>
+  </head>
+  <body>
+<header>
+<img src="multimedia/logo.jpg" alt="Logotipo" width="500" height="450">
+<h1>GLAMK</h1>
+<p>
+Luz Recinos
+Krysthel Coronado
+Minerva Monzon
+Alvaro Solorzano
+Guadalupe Ramirez
+</p>
+</header>
+
+<div class="fondo">
+ <img src="multimedia/fondo.png" alt="fondo" class="bg-image"/>
+
+<article>
+<a href="Paginas/Literatura.html.">Literatura</a>
+<a href="Paginas/Bio-Quimica.html" class="boton4">Bio-quimica</a>
+<a href="Paginas/Fisica.html" class="boton5">Fisica</a>
+<a href="Paginas/Estadistica.html" class="boton7">Estadistica</a>
+<a href="Paginas/Ingles.html" class="boton8">Ingles</a>
+<a href="Paginas/Ex art.html" class="boton9">Exp.Artistica</a>
+<br>
+<a href="Paginas/Valores.html" class="boton10">Valores</a>
+<br>
+</article>
+</div>
+ </body>
+</html>
